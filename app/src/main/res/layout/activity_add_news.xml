@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddNewsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:alpha="100"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/news"
+            app:titleTextColor="@color/primary"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/tvImageView"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        tools:alpha="100"
+        app:srcCompat="@drawable/baseline_image_24" />
+
+    <Button
+        android:id="@+id/btCamera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/camera"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@+id/btGallery"
+        app:layout_constraintEnd_toStartOf="@+id/btGallery"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btGallery"
+        tools:alpha="100"/>
+
+    <Button
+        android:id="@+id/btGallery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/gallery"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btCamera"
+        app:layout_constraintTop_toBottomOf="@+id/tvImageView"
+        tools:alpha="100"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextMultiLine"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="@+id/btGallery"
+        app:layout_constraintStart_toStartOf="@id/btCamera"
+        app:layout_constraintTop_toBottomOf="@+id/btGallery"
+        tools:alpha="100">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_add_description"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:hint="@string/description"
+            android:gravity="left|top"
+            android:textSize="15sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/upload"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/editTextMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMultiLine"
+        tools:alpha="100"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

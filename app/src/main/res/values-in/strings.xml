@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StoryApp</string>
+    <string name="login">Masuk</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="register">Registrasi</string>
+    <string name="name">Nama</string>
+    <string name="description">Deskripsi</string>
+    <string name="upload">Unggah</string>
+    <string name="gallery">Galeri</string>
+    <string name="camera">Kamera</string>
+    <string name="welcome_to_appstory">Selamat datang di AppStory</string>
+    <string name="enjoy_and_create_interesting_stories_in_this_app">Nikmati dan buat cerita yang menarik</string>
+    <string name="signin">Registrasi</string>
+    <string name="detail">Detail</string>
+    <string name="news">Tambah Cerita</string>
+    <string name="hello">Halo</string>
+    <string name="retry">Coba lagi</string>
+    <string name="title_activity_maps">Aktivitas map</string>
+</resources>

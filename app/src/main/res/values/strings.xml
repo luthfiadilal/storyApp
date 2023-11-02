@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">StoryApp</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="upload">Upload</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="welcome_to_appstory">Welcome to AppStory</string>
+    <string name="enjoy_and_create_interesting_stories_in_this_app">Enjoy and create interesting stories in this app</string>
+    <string name="signin">Register</string>
+    <string name="detail">Detail</string>
+    <string name="news">Add News</string>
+    <string name="hello">Hello</string>
+    <string name="retry">Try again</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

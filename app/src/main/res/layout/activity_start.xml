@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.StartActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="@string/welcome_to_appstory"
+        android:alpha="0"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:alpha="100"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/enjoy_and_create_interesting_stories_in_this_app"
+        android:alpha="0"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/heading"
+        app:layout_constraintStart_toStartOf="@+id/heading"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        tools:alpha="100"/>
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/signin"
+        android:alpha="0"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLogin"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle"
+        tools:alpha="100"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="@+id/subtitle"
+        app:layout_constraintStart_toEndOf="@+id/buttonSignIn"
+        app:layout_constraintTop_toTopOf="@+id/buttonSignIn"
+        tools:alpha="100"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

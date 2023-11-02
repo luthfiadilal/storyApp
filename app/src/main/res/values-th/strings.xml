@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StoryApp</string>
+    <string name="login">เข้าสู่ระบบ</string>
+    <string name="email">อีเมล</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="register">ลงทะเบียน</string>
+    <string name="name">ชื่อ</string>
+    <string name="description">คำอธิบาย</string>
+    <string name="upload">ที่อัพโหลด</string>
+    <string name="gallery">แกลเลอรี่</string>
+    <string name="camera">กล้อง</string>
+    <string name="welcome_to_appstory">ยินดีต้อนรับสู่ AppStory</string>
+    <string name="enjoy_and_create_interesting_stories_in_this_app">เพลิดเพลินและสร้างเรื่องราวที่น่าสนใจในแอพนี้</string>
+    <string name="signin">ลงทะเบียน</string>
+    <string name="detail">รายละเอียด</string>
+    <string name="news">ตัมบาห์ เซอริตา</string>
+    <string name="hello">สวัสดี</string>
+    <string name="retry">ลองอีกครั้ง</string>
+    <string name="title_activity_maps">กิจกรรมแผนที่</string>
+</resources>

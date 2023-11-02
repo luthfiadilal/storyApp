@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.StoryApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+
+    </style>
+
+    <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Inverse">
+        <item name="android:indeterminateTint">@color/primary</item> <!-- Mengubah warna indikator ProgressBar -->
+    </style>
+
+    <style name="SplashScreenStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_logo</item>
+    </style>
+
+
+    <style name="Theme.StoryApp" parent="Base.Theme.StoryApp" />
+
+
+</resources>

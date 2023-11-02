@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:text="@string/register"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:textColor="@color/heading"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:alpha="100"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:text="@string/name"
+        android:alpha="0"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/namaEditTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        tools:alpha="100"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/namaEditTextLayout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="42dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        tools:alpha="100">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_register_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="@string/name"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/email"
+        android:alpha="0"
+        android:textSize="18sp"
+        android:textColor="@color/primary"
+        app:layout_constraintStart_toStartOf="@+id/emailEditTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/namaEditTextLayout"
+        tools:alpha="100"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailEditTextLayout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="42dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
+        app:startIconDrawable="@drawable/baseline_email_24"
+        tools:alpha="100">
+
+        <com.example.storyapp.component.CustomTextInputEmail
+            android:id="@+id/ed_register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/password"
+        android:alpha="0"
+        android:textSize="18sp"
+        android:textColor="@color/primary"
+        app:layout_constraintStart_toStartOf="@+id/passwordTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout"
+        tools:alpha="100"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextLayout"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="42dp"
+        android:alpha="0"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassword"
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        tools:alpha="100">
+
+        <com.example.storyapp.component.CustomTextInputEditText
+            android:id="@+id/ed_register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/register"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="@+id/passwordTextLayout"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextLayout"
+        tools:alpha="100"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
